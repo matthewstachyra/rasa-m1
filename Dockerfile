@@ -14,9 +14,9 @@ RUN apt-get install -y python3-pip && \
     apt install python3.8-venv && \
     pip3 install -U pip
 
-## set up venv to install rasa
-# RUN python3 -m venv /opt/venv && \
-#   . /venv/bin/activate && \
-###    pip3 install rasa 
+# set up venv to install rasa
+RUN python3 -m venv /opt/venv && \
+    . /venv/bin/activate && \
+    pip3 install rasa 
 
 
